@@ -1,0 +1,850 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/nbo/real_estate_invest_targeting_02",
+        "latest": {
+            "manifest": {
+                "time": "2025-05-08T15:44:45.646728777Z",
+                "magic": "afb0b63d6746c8d512491ec16bc9053776fb43c6f21375a7d61f5b0f2bfcfb5e",
+                "version": "v3.165.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:ox2Y1ER2+ps=:v1:qIsNhY6AmtkpJmbl:G0W6Y0tEjnLm8RILQ18Yj7vSjDkbJg=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "CUSTOM_METRIC_IDS": "{\"user_feedback\": \"681ccac3bdef1447a7fa0255\", \"readability\": \"681ccac4ba7d27dbc9f9e3b7\", \"reading_time\": \"681ccac4d96d7727a8b657f8\", \"sentiment\": \"681ccac518a6f98228214fcb\", \"confidence\": \"681ccac5c43f3cfa582155ee\", \"prompt_tokens\": \"681ccac60d7e903d99b63b4b\", \"response_tokens\": \"681ccac7d96d7727a8b657fc\", \"llm_cost\": \"681ccac7fe88cec2f82146aa\"}",
+                        "DATAROBOT_APPLICATION_ID": "681ccacd945ddceffacb2e34",
+                        "DATASET_ID": "681cc7d4bf07a2bd3a80ebb9",
+                        "GENERATIVE_DEPLOYMENT_ID": "681cc9f405953416bcfa003e",
+                        "PRED_AI_DEPLOYMENT_ID": "681cc9b519c144d7d6b64da0",
+                        "Predictive Content Generator Application [real_estate_invest_targeting_02]": "https://app.datarobot.com/custom_applications/681ccacd945ddceffacb2e34/",
+                        "Predictive Content Generator Generative Deployment [real_estate_invest_targeting_02]": "https://app.datarobot.com/console-nextgen/deployments/681cc9f405953416bcfa003e/",
+                        "Predictive Deployment [real_estate_invest_targeting_02]": "https://app.datarobot.com/console-nextgen/deployments/681cc9b519c144d7d6b64da0/"
+                    },
+                    "created": "2025-05-08T15:11:48.204047194Z",
+                    "modified": "2025-05-08T15:11:48.204047194Z",
+                    "sourcePosition": "project:///.venv/lib/python3.11/site-packages/pulumi/runtime/stack.py#140"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::custom:datarobot:CustomModelDeployment::Predictive Content Generator LLM Deployment [real_estate_invest_targeting_02]",
+                    "custom": false,
+                    "type": "custom:datarobot:CustomModelDeployment",
+                    "outputs": {
+                        "custom_model_version_id": "681cc9ce0acf73508d80de7f",
+                        "deployment_id": "681cc9f405953416bcfa003e",
+                        "registered_model_id": "681cc9e11a64238eec1fc06d",
+                        "registered_model_version_id": "681cc9e21a64238eec1fc071"
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "created": "2025-05-08T15:11:48.274665655Z",
+                    "modified": "2025-05-08T15:11:48.274665655Z",
+                    "sourcePosition": "project:///infra/__main__.py#192"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot",
+                    "custom": true,
+                    "id": "1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "type": "pulumi:providers:datarobot",
+                    "inputs": {
+                        "__internal": {
+                            "pluginDownloadURL": "github://api.github.com/datarobot-community/pulumi-datarobot"
+                        },
+                        "tracecontext": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:WLcYaw40sloVZqD2:+mpKqUUk2ivdFUZFRjhGe7LoTHu/fU6xn0o8P6yI/vQYIkkY0BoZL2L2LWvozQ=="
+                        },
+                        "version": "0.8.19"
+                    },
+                    "outputs": {
+                        "tracecontext": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:6vpmcCNHM/ifnG9w:Q8Np4o+hnfKW6STM7CAxTWQJ7pVfBK/tly5JO3bLd0Jp+PNp1Dk39SeasevoQg=="
+                        },
+                        "version": "0.8.19"
+                    },
+                    "created": "2025-05-08T15:11:48.277289231Z",
+                    "modified": "2025-05-08T15:11:48.277289231Z"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/predictionEnvironment:PredictionEnvironment::Predictive Content Generator Prediction Environment [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681cc9b424bbb19c5a1fc173",
+                    "type": "datarobot:index/predictionEnvironment:PredictionEnvironment",
+                    "inputs": {
+                        "name": "Predictive Content Generator Prediction Environment [real_estate_invest_targeting_02]-b92a5b2",
+                        "platform": "datarobotServerless"
+                    },
+                    "outputs": {
+                        "id": "681cc9b424bbb19c5a1fc173",
+                        "managedBy": "selfManaged",
+                        "name": "Predictive Content Generator Prediction Environment [real_estate_invest_targeting_02]-b92a5b2",
+                        "platform": "datarobotServerless"
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "platform": []
+                    },
+                    "created": "2025-05-08T15:11:48.868670863Z",
+                    "modified": "2025-05-08T15:11:48.868670863Z",
+                    "sourcePosition": "project:///infra/__main__.py#107"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/apiTokenCredential:ApiTokenCredential::Predictive Content Generator OPENAI_API_KEY Credential [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681cc9b41a64238eec1fc04c",
+                    "type": "datarobot:index/apiTokenCredential:ApiTokenCredential",
+                    "inputs": {
+                        "apiToken": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:zN6LQSSEpO2tFNve:chsw5JeBrsJLClszTkL17XpLPkHOo45nYMLwzUnEcX8CT+IZoCxBaXUAC2tIe3g5N00="
+                        },
+                        "name": "Predictive Content Generator OPENAI_API_KEY Credential [real_estate_invest_targeting_02]-d5a79c0"
+                    },
+                    "outputs": {
+                        "apiToken": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:T8Xal9QgVSWDhQwE:wAhrbWMIts6rXiZP3lHkDPXzDR9c2sN9E0KesDi8xgCYu74B63Yf+U64KgP0WR54TU0="
+                        },
+                        "id": "681cc9b41a64238eec1fc04c",
+                        "name": "Predictive Content Generator OPENAI_API_KEY Credential [real_estate_invest_targeting_02]-d5a79c0"
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "apiToken": []
+                    },
+                    "additionalSecretOutputs": [
+                        "apiToken"
+                    ],
+                    "created": "2025-05-08T15:11:48.396021932Z",
+                    "modified": "2025-05-08T15:11:48.396021932Z",
+                    "sourcePosition": "project:///utils/credentials.py#115"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case",
+                    "custom": true,
+                    "id": "681cbdf5e7b7882ed4cb2ca2",
+                    "type": "datarobot:index/useCase:UseCase",
+                    "outputs": {
+                        "id": "681cbdf5e7b7882ed4cb2ca2",
+                        "name": "Use Case from Predictive Content Generator created for 不動産投資 顧客ターゲティング"
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "external": true,
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "sourcePosition": "project:///.venv/lib/python3.11/site-packages/pulumi_datarobot/use_case.py#200"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/playground:Playground::Predictive Content Generator Playground [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681cc9b5cc37a4a988ce8c1c",
+                    "type": "datarobot:index/playground:Playground",
+                    "inputs": {
+                        "name": "Predictive Content Generator Playground [real_estate_invest_targeting_02]-4c305a8",
+                        "useCaseId": "681cbdf5e7b7882ed4cb2ca2"
+                    },
+                    "outputs": {
+                        "id": "681cc9b5cc37a4a988ce8c1c",
+                        "name": "Predictive Content Generator Playground [real_estate_invest_targeting_02]-4c305a8",
+                        "useCaseId": "681cbdf5e7b7882ed4cb2ca2"
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "dependencies": [
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                    ],
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "useCaseId": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                        ]
+                    },
+                    "created": "2025-05-08T15:11:50.338513332Z",
+                    "modified": "2025-05-08T15:11:50.338513332Z",
+                    "sourcePosition": "project:///infra/__main__.py#139"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/deployment:Deployment::Predictive Deployment [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681cc9b519c144d7d6b64da0",
+                    "type": "datarobot:index/deployment:Deployment",
+                    "inputs": {
+                        "driftTrackingSettings": {
+                            "targetDriftEnabled": true
+                        },
+                        "label": "Predictive Deployment [real_estate_invest_targeting_02]",
+                        "predictionEnvironmentId": "681cc9b424bbb19c5a1fc173",
+                        "predictionsDataCollectionSettings": {
+                            "enabled": true
+                        },
+                        "predictionsSettings": {
+                            "maxComputes": 1,
+                            "minComputes": 0
+                        },
+                        "registeredModelVersionId": "681cc93640b04bbc17cb2ce1",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ]
+                    },
+                    "outputs": {
+                        "driftTrackingSettings": {
+                            "targetDriftEnabled": true
+                        },
+                        "id": "681cc9b519c144d7d6b64da0",
+                        "importance": "LOW",
+                        "label": "Predictive Deployment [real_estate_invest_targeting_02]",
+                        "predictionEnvironmentId": "681cc9b424bbb19c5a1fc173",
+                        "predictionsDataCollectionSettings": {
+                            "enabled": true
+                        },
+                        "predictionsSettings": {
+                            "maxComputes": 1,
+                            "minComputes": 0
+                        },
+                        "registeredModelVersionId": "681cc93640b04bbc17cb2ce1",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ]
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "dependencies": [
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/predictionEnvironment:PredictionEnvironment::Predictive Content Generator Prediction Environment [real_estate_invest_targeting_02]",
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                    ],
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "driftTrackingSettings": [],
+                        "label": [],
+                        "predictionEnvironmentId": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/predictionEnvironment:PredictionEnvironment::Predictive Content Generator Prediction Environment [real_estate_invest_targeting_02]"
+                        ],
+                        "predictionsDataCollectionSettings": [],
+                        "predictionsSettings": [],
+                        "registeredModelVersionId": [],
+                        "useCaseIds": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                        ]
+                    },
+                    "created": "2025-05-08T15:12:00.463742084Z",
+                    "modified": "2025-05-08T15:12:00.463742084Z",
+                    "sourcePosition": "project:///infra/__main__.py#112"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/llmBlueprint:LlmBlueprint::Predictive Content Generator LLM Blueprint [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681cc9b705fceefa9d04f7bb",
+                    "type": "datarobot:index/llmBlueprint:LlmBlueprint",
+                    "inputs": {
+                        "llmId": "azure-openai-gpt-4-o-mini",
+                        "llmSettings": {
+                            "maxCompletionLength": 512,
+                            "systemPrompt": null,
+                            "temperature": 0.5,
+                            "topP": null
+                        },
+                        "name": "Predictive Content Generator LLM Blueprint [real_estate_invest_targeting_02]-aaed7c4",
+                        "playgroundId": "681cc9b5cc37a4a988ce8c1c"
+                    },
+                    "outputs": {
+                        "id": "681cc9b705fceefa9d04f7bb",
+                        "llmId": "azure-openai-gpt-4-o-mini",
+                        "llmSettings": {
+                            "maxCompletionLength": 512,
+                            "temperature": 0.5
+                        },
+                        "name": "Predictive Content Generator LLM Blueprint [real_estate_invest_targeting_02]-aaed7c4",
+                        "playgroundId": "681cc9b5cc37a4a988ce8c1c",
+                        "promptType": "CHAT_HISTORY_AWARE"
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "dependencies": [
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/playground:Playground::Predictive Content Generator Playground [real_estate_invest_targeting_02]"
+                    ],
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "llmId": [],
+                        "llmSettings": [],
+                        "playgroundId": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/playground:Playground::Predictive Content Generator Playground [real_estate_invest_targeting_02]"
+                        ]
+                    },
+                    "created": "2025-05-08T15:11:51.782427758Z",
+                    "modified": "2025-05-08T15:11:51.782427758Z",
+                    "sourcePosition": "project:///infra/__main__.py#178"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/customModel:CustomModel::Predictive Content Generator Generative Model [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681cc9ba0acf73508d80de4d",
+                    "type": "datarobot:index/customModel:CustomModel",
+                    "inputs": {
+                        "baseEnvironmentId": "67ab469cecdca772287de644",
+                        "name": "Predictive Content Generator Generative Model [real_estate_invest_targeting_02]",
+                        "resourceBundleId": "cpu.medium",
+                        "runtimeParameterValues": [
+                            {
+                                "key": "OPENAI_API_KEY",
+                                "type": "credential",
+                                "value": "681cc9b41a64238eec1fc04c"
+                            },
+                            {
+                                "key": "OPENAI_API_BASE",
+                                "type": "string",
+                                "value": "https://datarobot-genai-enablement.openai.azure.com"
+                            },
+                            {
+                                "key": "OPENAI_API_DEPLOYMENT_ID",
+                                "type": "string",
+                                "value": "gpt-4o"
+                            },
+                            {
+                                "key": "OPENAI_API_VERSION",
+                                "type": "string",
+                                "value": "2024-08-01-preview"
+                            }
+                        ],
+                        "sourceLlmBlueprintId": "681cc9b705fceefa9d04f7bb",
+                        "targetName": "resultText",
+                        "targetType": "TextGeneration",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ]
+                    },
+                    "outputs": {
+                        "baseEnvironmentId": "67ab469cecdca772287de644",
+                        "baseEnvironmentVersionId": "68187d354b53f032b3774ab3",
+                        "deploymentsCount": 0,
+                        "description": "このカスタムモデルは、DataRobotによってPredictive Content Generator LLM Blueprint [real_estate_invest_targeting_02]-aaed7c4から自動生成されました",
+                        "filesHashes": [],
+                        "id": "681cc9ba0acf73508d80de4d",
+                        "isProxy": false,
+                        "memoryMb": 2048,
+                        "name": "Predictive Content Generator Generative Model [real_estate_invest_targeting_02]",
+                        "negativeClassLabel": "0",
+                        "networkAccess": "PUBLIC",
+                        "positiveClassLabel": "1",
+                        "predictionThreshold": 0.5,
+                        "replicas": 1,
+                        "resourceBundleId": "cpu.medium",
+                        "runtimeParameterValues": [
+                            {
+                                "key": "OPENAI_API_KEY",
+                                "type": "credential",
+                                "value": "681cc9b41a64238eec1fc04c"
+                            },
+                            {
+                                "key": "OPENAI_API_BASE",
+                                "type": "string",
+                                "value": "https://datarobot-genai-enablement.openai.azure.com"
+                            },
+                            {
+                                "key": "OPENAI_API_DEPLOYMENT_ID",
+                                "type": "string",
+                                "value": "gpt-4o"
+                            },
+                            {
+                                "key": "OPENAI_API_VERSION",
+                                "type": "string",
+                                "value": "2024-08-01-preview"
+                            }
+                        ],
+                        "sourceLlmBlueprintId": "681cc9b705fceefa9d04f7bb",
+                        "targetName": "resultText",
+                        "targetType": "TextGeneration",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ],
+                        "versionId": "681cc9ce0acf73508d80de7f"
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "dependencies": [
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/apiTokenCredential:ApiTokenCredential::Predictive Content Generator OPENAI_API_KEY Credential [real_estate_invest_targeting_02]",
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/llmBlueprint:LlmBlueprint::Predictive Content Generator LLM Blueprint [real_estate_invest_targeting_02]",
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                    ],
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "baseEnvironmentId": [],
+                        "name": [],
+                        "resourceBundleId": [],
+                        "runtimeParameterValues": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/apiTokenCredential:ApiTokenCredential::Predictive Content Generator OPENAI_API_KEY Credential [real_estate_invest_targeting_02]"
+                        ],
+                        "sourceLlmBlueprintId": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/llmBlueprint:LlmBlueprint::Predictive Content Generator LLM Blueprint [real_estate_invest_targeting_02]"
+                        ],
+                        "targetName": [],
+                        "targetType": [],
+                        "useCaseIds": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                        ]
+                    },
+                    "created": "2025-05-08T15:12:17.116807088Z",
+                    "modified": "2025-05-08T15:12:17.116807088Z",
+                    "sourcePosition": "project:///infra/__main__.py#183"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::custom:datarobot:CustomModelDeployment$datarobot:index/registeredModel:RegisteredModel::Predictive Content Generator Generative Model [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681cc9e11a64238eec1fc06d",
+                    "type": "datarobot:index/registeredModel:RegisteredModel",
+                    "inputs": {
+                        "customModelVersionId": "681cc9ce0acf73508d80de7f",
+                        "name": "Predictive Content Generator Generative Model [real_estate_invest_targeting_02]-32ad3bf",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ]
+                    },
+                    "outputs": {
+                        "customModelVersionId": "681cc9ce0acf73508d80de7f",
+                        "id": "681cc9e11a64238eec1fc06d",
+                        "name": "Predictive Content Generator Generative Model [real_estate_invest_targeting_02]-32ad3bf",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ],
+                        "versionId": "681cc9e21a64238eec1fc071",
+                        "versionName": "Predictive Content Generator Generative Model [real_estate_invest_targeting_02]-32ad3bf (v1)"
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::custom:datarobot:CustomModelDeployment::Predictive Content Generator LLM Deployment [real_estate_invest_targeting_02]",
+                    "dependencies": [
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/customModel:CustomModel::Predictive Content Generator Generative Model [real_estate_invest_targeting_02]",
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                    ],
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "customModelVersionId": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/customModel:CustomModel::Predictive Content Generator Generative Model [real_estate_invest_targeting_02]"
+                        ],
+                        "useCaseIds": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                        ]
+                    },
+                    "created": "2025-05-08T15:12:51.706090153Z",
+                    "modified": "2025-05-08T15:12:51.706090153Z",
+                    "sourcePosition": "project:///.venv/lib/python3.11/site-packages/datarobot_pulumi_utils/pulumi/custom_model_deployment.py#73"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::custom:datarobot:CustomModelDeployment$datarobot:index/deployment:Deployment::Predictive Content Generator Generative Deployment [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681cc9f405953416bcfa003e",
+                    "type": "datarobot:index/deployment:Deployment",
+                    "inputs": {
+                        "associationIdSettings": {
+                            "autoGenerateId": false,
+                            "columnNames": [
+                                "association_id"
+                            ],
+                            "requiredInPredictionRequests": true
+                        },
+                        "label": "Predictive Content Generator Generative Deployment [real_estate_invest_targeting_02]",
+                        "predictionEnvironmentId": "681cc9b424bbb19c5a1fc173",
+                        "predictionsDataCollectionSettings": {
+                            "enabled": true
+                        },
+                        "predictionsSettings": {
+                            "maxComputes": 1,
+                            "minComputes": 0
+                        },
+                        "registeredModelVersionId": "681cc9e21a64238eec1fc071",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ]
+                    },
+                    "outputs": {
+                        "associationIdSettings": {
+                            "autoGenerateId": false,
+                            "columnNames": [
+                                "association_id"
+                            ],
+                            "requiredInPredictionRequests": true
+                        },
+                        "id": "681cc9f405953416bcfa003e",
+                        "importance": "LOW",
+                        "label": "Predictive Content Generator Generative Deployment [real_estate_invest_targeting_02]",
+                        "predictionEnvironmentId": "681cc9b424bbb19c5a1fc173",
+                        "predictionsDataCollectionSettings": {
+                            "enabled": true
+                        },
+                        "predictionsSettings": {
+                            "maxComputes": 1,
+                            "minComputes": 0
+                        },
+                        "registeredModelVersionId": "681cc9e21a64238eec1fc071",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ]
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::custom:datarobot:CustomModelDeployment::Predictive Content Generator LLM Deployment [real_estate_invest_targeting_02]",
+                    "dependencies": [
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/predictionEnvironment:PredictionEnvironment::Predictive Content Generator Prediction Environment [real_estate_invest_targeting_02]",
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::custom:datarobot:CustomModelDeployment$datarobot:index/registeredModel:RegisteredModel::Predictive Content Generator Generative Model [real_estate_invest_targeting_02]",
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                    ],
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "associationIdSettings": [],
+                        "label": [],
+                        "predictionEnvironmentId": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/predictionEnvironment:PredictionEnvironment::Predictive Content Generator Prediction Environment [real_estate_invest_targeting_02]"
+                        ],
+                        "predictionsDataCollectionSettings": [],
+                        "predictionsSettings": [],
+                        "registeredModelVersionId": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::custom:datarobot:CustomModelDeployment$datarobot:index/registeredModel:RegisteredModel::Predictive Content Generator Generative Model [real_estate_invest_targeting_02]"
+                        ],
+                        "useCaseIds": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/useCase:UseCase::Predictive Content Generator Use Case"
+                        ]
+                    },
+                    "created": "2025-05-08T15:16:18.934373766Z",
+                    "modified": "2025-05-08T15:16:18.934373766Z",
+                    "sourcePosition": "project:///.venv/lib/python3.11/site-packages/datarobot_pulumi_utils/pulumi/custom_model_deployment.py#80"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/applicationSource:ApplicationSource::Predictive Content Generator App Source [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681ccac7945ddceffacb2e20",
+                    "type": "datarobot:index/applicationSource:ApplicationSource",
+                    "inputs": {
+                        "baseEnvironmentId": "66d07fae0513a1edf18595bb",
+                        "files": [
+                            [
+                                "/home/notebooks/storage/frontend/start-app.sh",
+                                "start-app.sh"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/app.py",
+                                "app.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/datarobot_favicon.png",
+                                "datarobot_favicon.png"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/helpers.py",
+                                "helpers.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/requirements.txt",
+                                "requirements.txt"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/DataRobot_white.svg",
+                                "DataRobot_white.svg"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/DataRobot_black.svg",
+                                "DataRobot_black.svg"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/style.css",
+                                "style.css"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/.streamlit/config.toml",
+                                ".streamlit/config.toml"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/__init__.py",
+                                "nbo/__init__.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/schema.py",
+                                "nbo/schema.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/i18n.py",
+                                "nbo/i18n.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/predict.py",
+                                "nbo/predict.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/resources.py",
+                                "nbo/resources.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/credentials.py",
+                                "nbo/credentials.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/urls.py",
+                                "nbo/urls.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/custom_metrics.py",
+                                "nbo/custom_metrics.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/metadata.yaml",
+                                "metadata.yaml"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/app_settings.real_estate_invest_targeting_02.yaml",
+                                "app_settings.yaml"
+                            ]
+                        ],
+                        "name": "Predictive Content Generator App Source [real_estate_invest_targeting_02]-653781e",
+                        "runtimeParameterValues": [
+                            {
+                                "key": "GENERATIVE_DEPLOYMENT_ID",
+                                "type": "deployment",
+                                "value": "681cc9f405953416bcfa003e"
+                            },
+                            {
+                                "key": "PRED_AI_DEPLOYMENT_ID",
+                                "type": "deployment",
+                                "value": "681cc9b519c144d7d6b64da0"
+                            },
+                            {
+                                "key": "CUSTOM_METRIC_IDS",
+                                "type": "string",
+                                "value": "{\"user_feedback\": \"681ccac3bdef1447a7fa0255\", \"readability\": \"681ccac4ba7d27dbc9f9e3b7\", \"reading_time\": \"681ccac4d96d7727a8b657f8\", \"sentiment\": \"681ccac518a6f98228214fcb\", \"confidence\": \"681ccac5c43f3cfa582155ee\", \"prompt_tokens\": \"681ccac60d7e903d99b63b4b\", \"response_tokens\": \"681ccac7d96d7727a8b657fc\", \"llm_cost\": \"681ccac7fe88cec2f82146aa\"}"
+                            },
+                            {
+                                "key": "DATASET_ID",
+                                "type": "string",
+                                "value": "681cc7d4bf07a2bd3a80ebb9"
+                            },
+                            {
+                                "key": "APP_LOCALE",
+                                "type": "string",
+                                "value": "en_US"
+                            }
+                        ]
+                    },
+                    "outputs": {
+                        "baseEnvironmentId": "66d07fae0513a1edf18595bb",
+                        "baseEnvironmentVersionId": "67f427d8e0dc8b5ad2e58b6f",
+                        "files": [
+                            [
+                                "/home/notebooks/storage/frontend/start-app.sh",
+                                "start-app.sh"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/app.py",
+                                "app.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/datarobot_favicon.png",
+                                "datarobot_favicon.png"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/helpers.py",
+                                "helpers.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/requirements.txt",
+                                "requirements.txt"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/DataRobot_white.svg",
+                                "DataRobot_white.svg"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/DataRobot_black.svg",
+                                "DataRobot_black.svg"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/style.css",
+                                "style.css"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/.streamlit/config.toml",
+                                ".streamlit/config.toml"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/__init__.py",
+                                "nbo/__init__.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/schema.py",
+                                "nbo/schema.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/i18n.py",
+                                "nbo/i18n.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/predict.py",
+                                "nbo/predict.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/resources.py",
+                                "nbo/resources.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/credentials.py",
+                                "nbo/credentials.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/urls.py",
+                                "nbo/urls.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/nbo/custom_metrics.py",
+                                "nbo/custom_metrics.py"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/metadata.yaml",
+                                "metadata.yaml"
+                            ],
+                            [
+                                "/home/notebooks/storage/frontend/app_settings.real_estate_invest_targeting_02.yaml",
+                                "app_settings.yaml"
+                            ]
+                        ],
+                        "filesHashes": [
+                            "a277836dc177229d8003e055e4cd0c52c0990dd84cbe2201a3cda9cda5d9ebef",
+                            "6e554cbe83ca90fdeac41a91398a2cc0efd826160b61eca4849cab3345019597",
+                            "53e1aeb22b0103278c624c4f9feca7e8d115659e254ef7bc0d8229935fc63820",
+                            "d333b40e12c8b7b830dafed1ea428de1391db1341a32c82c715ccd3959a2ef45",
+                            "0b659cac3b54a00de3ab4f9b9524307ccce25198c801906b8a53461c2562175b",
+                            "b9537809233d3be26aeef9c0a6cdcc90145a8cff177437a71f6062938db63e05",
+                            "d29ddb013fb1194db29aded0930a3c827aac205f3423afb65e2c274c93dfa77c",
+                            "d99c6995294d526f62f7dd999d0bee5fe3de91484483dd4fc4ce3bec5706037a",
+                            "684a691373ea7f0c67a02da0d0606c2ecaf45037dd100b17a7a89b8506b3cea8",
+                            "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                            "3041c68003726bbee1189d0e46a897c56d92da9748d0df2d541f5830f8e1465a",
+                            "eecea8d51c3fff24e099333cceaba1973fa16c3072f855680a4247dbc8c2548d",
+                            "67dafa1d24da878e21fa812069098cf278f38b7957356b993c502864d8660ef0",
+                            "df8aa3b632fd79c1979359aa18df81283d0e8261fd683855a3706512df858a07",
+                            "452b0f214342fc2046475cff08fba385582a901068f1b8c154a314ba8fa430bf",
+                            "ee11992c1a6e0fb883688c3cf4a3fff26de56991b8bee54a743206ddc440bb53",
+                            "3c8db2d8e8eb2dbf073a896be3f95df6e5ba19053af3cccffbd0932ae91643e5",
+                            "32f664f2563ffe68d72833bec6e1ff3cca421afcdba5557047278dd8829b42ec",
+                            "db89f57ae523b67b7aba8cd5430a902b199e125cb6fc39cb48032aa7fefe3278"
+                        ],
+                        "id": "681ccac7945ddceffacb2e20",
+                        "name": "Predictive Content Generator App Source [real_estate_invest_targeting_02]-653781e",
+                        "runtimeParameterValues": [
+                            {
+                                "key": "GENERATIVE_DEPLOYMENT_ID",
+                                "type": "deployment",
+                                "value": "681cc9f405953416bcfa003e"
+                            },
+                            {
+                                "key": "PRED_AI_DEPLOYMENT_ID",
+                                "type": "deployment",
+                                "value": "681cc9b519c144d7d6b64da0"
+                            },
+                            {
+                                "key": "CUSTOM_METRIC_IDS",
+                                "type": "string",
+                                "value": "{\"user_feedback\": \"681ccac3bdef1447a7fa0255\", \"readability\": \"681ccac4ba7d27dbc9f9e3b7\", \"reading_time\": \"681ccac4d96d7727a8b657f8\", \"sentiment\": \"681ccac518a6f98228214fcb\", \"confidence\": \"681ccac5c43f3cfa582155ee\", \"prompt_tokens\": \"681ccac60d7e903d99b63b4b\", \"response_tokens\": \"681ccac7d96d7727a8b657fc\", \"llm_cost\": \"681ccac7fe88cec2f82146aa\"}"
+                            },
+                            {
+                                "key": "DATASET_ID",
+                                "type": "string",
+                                "value": "681cc7d4bf07a2bd3a80ebb9"
+                            },
+                            {
+                                "key": "APP_LOCALE",
+                                "type": "string",
+                                "value": "en_US"
+                            }
+                        ],
+                        "versionId": "681cd16857d52723c1cb2db3"
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "dependencies": [
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::custom:datarobot:CustomModelDeployment$datarobot:index/deployment:Deployment::Predictive Content Generator Generative Deployment [real_estate_invest_targeting_02]",
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/deployment:Deployment::Predictive Deployment [real_estate_invest_targeting_02]"
+                    ],
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "baseEnvironmentId": [],
+                        "files": [],
+                        "runtimeParameterValues": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::custom:datarobot:CustomModelDeployment$datarobot:index/deployment:Deployment::Predictive Content Generator Generative Deployment [real_estate_invest_targeting_02]",
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/deployment:Deployment::Predictive Deployment [real_estate_invest_targeting_02]"
+                        ]
+                    },
+                    "created": "2025-05-08T15:16:29.420723229Z",
+                    "modified": "2025-05-08T15:44:45.625537182Z",
+                    "sourcePosition": "project:///infra/__main__.py#230"
+                },
+                {
+                    "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/customApplication:CustomApplication::Predictive Content Generator Application [real_estate_invest_targeting_02]",
+                    "custom": true,
+                    "id": "681ccacd945ddceffacb2e34",
+                    "type": "datarobot:index/customApplication:CustomApplication",
+                    "inputs": {
+                        "name": "Predictive Content Generator Application [real_estate_invest_targeting_02]-edc400c",
+                        "sourceVersionId": "681ccac85451c84d691fc006",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ]
+                    },
+                    "outputs": {
+                        "allowAutoStopping": true,
+                        "applicationUrl": "https://app.datarobot.com/custom_applications/681ccacd945ddceffacb2e34/",
+                        "externalAccessEnabled": false,
+                        "id": "681ccacd945ddceffacb2e34",
+                        "name": "Predictive Content Generator Application [real_estate_invest_targeting_02]-edc400c",
+                        "sourceId": "681ccac7945ddceffacb2e20",
+                        "sourceVersionId": "681ccac85451c84d691fc006",
+                        "useCaseIds": [
+                            "681cbdf5e7b7882ed4cb2ca2"
+                        ]
+                    },
+                    "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                    "dependencies": [
+                        "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/applicationSource:ApplicationSource::Predictive Content Generator App Source [real_estate_invest_targeting_02]"
+                    ],
+                    "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                    "propertyDependencies": {
+                        "sourceVersionId": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/applicationSource:ApplicationSource::Predictive Content Generator App Source [real_estate_invest_targeting_02]"
+                        ],
+                        "useCaseIds": []
+                    },
+                    "created": "2025-05-08T15:22:07.094315189Z",
+                    "modified": "2025-05-08T15:22:07.094315189Z",
+                    "sourcePosition": "project:///infra/__main__.py#238"
+                }
+            ],
+            "pending_operations": [
+                {
+                    "resource": {
+                        "urn": "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/customApplication:CustomApplication::Predictive Content Generator Application [real_estate_invest_targeting_02]",
+                        "custom": true,
+                        "type": "datarobot:index/customApplication:CustomApplication",
+                        "inputs": {
+                            "name": "Predictive Content Generator Application [real_estate_invest_targeting_02]-edc400c",
+                            "sourceVersionId": "681cd16857d52723c1cb2db3",
+                            "useCaseIds": [
+                                "681cbdf5e7b7882ed4cb2ca2"
+                            ]
+                        },
+                        "parent": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:pulumi:Stack::nbo-real_estate_invest_targeting_02",
+                        "dependencies": [
+                            "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/applicationSource:ApplicationSource::Predictive Content Generator App Source [real_estate_invest_targeting_02]"
+                        ],
+                        "provider": "urn:pulumi:real_estate_invest_targeting_02::nbo::pulumi:providers:datarobot::default_0_8_19_github_/api.github.com/datarobot-community/pulumi-datarobot::1b64f707-9ff5-4321-83ae-26fcf82e540a",
+                        "propertyDependencies": {
+                            "sourceVersionId": [
+                                "urn:pulumi:real_estate_invest_targeting_02::nbo::datarobot:index/applicationSource:ApplicationSource::Predictive Content Generator App Source [real_estate_invest_targeting_02]"
+                            ],
+                            "useCaseIds": []
+                        },
+                        "created": "2025-05-08T15:22:07.094315189Z",
+                        "modified": "2025-05-08T15:22:07.094315189Z",
+                        "sourcePosition": "project:///infra/__main__.py#238"
+                    },
+                    "type": "updating"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

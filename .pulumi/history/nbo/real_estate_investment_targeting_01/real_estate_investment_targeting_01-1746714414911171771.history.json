@@ -1,0 +1,38 @@
+{
+    "kind": "refresh",
+    "startTime": 1746714413,
+    "message": "v0.1.15",
+    "environment": {
+        "exec.kind": "cli",
+        "git.author": "datarobot-devinfragit7",
+        "git.author.email": "datarobot-devinfragit7@datarobot.com",
+        "git.committer": "datarobot-devinfragit7",
+        "git.committer.email": "datarobot-devinfragit7@datarobot.com",
+        "git.dirty": "true",
+        "git.head": "1f6a73478347368eb903c1aa9e081d5a327fff7d",
+        "git.headName": "refs/heads/main",
+        "pulumi.arch": "amd64",
+        "pulumi.env.PULUMI_BACKEND_URL": "set",
+        "pulumi.env.PULUMI_CONFIG_PASSPHRASE": "set",
+        "pulumi.env.PULUMI_HOME": "set",
+        "pulumi.flag.skip-pending-creates": "true",
+        "pulumi.flag.yes": "true",
+        "pulumi.os": "linux",
+        "pulumi.version": "v3.165.0",
+        "stack.environments": "[]",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "datarobot-community",
+        "vcs.repo": "predictive-content-generator",
+        "vcs.root": "."
+    },
+    "config": {
+        "datarobot:tracecontext": "predictive-content-generator",
+        "pulumi:tags": {
+            "pulumi:template": "python"
+        }
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1746714414
+}

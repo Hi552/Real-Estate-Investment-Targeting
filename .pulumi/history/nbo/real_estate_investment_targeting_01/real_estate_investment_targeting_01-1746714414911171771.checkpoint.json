@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/nbo/real_estate_investment_targeting_01",
+        "latest": {
+            "manifest": {
+                "time": "2025-05-08T14:26:54.909887416Z",
+                "magic": "afb0b63d6746c8d512491ec16bc9053776fb43c6f21375a7d61f5b0f2bfcfb5e",
+                "version": "v3.165.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:AsxewQwUk5U=:v1:O437stVGhO3gufV/:4kcEMDqwQ4YjFyJ3E9viHpw8FqWb+A=="
+                }
+            },
+            "metadata": {}
+        }
+    }
+}
