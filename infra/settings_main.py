@@ -28,7 +28,7 @@ prediction_environment_resource_name = (
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.absolute()
 
-model_training_nb = PROJECT_ROOT / "notebooks" / "train_model_underwriting.ipynb"
+model_training_nb = PROJECT_ROOT / "notebooks" / "train_model_underwriting_bleedout.ipynb"
 model_training_output_ds_settings = (
     PROJECT_ROOT / "frontend" / f"app_settings.{project_name}.yaml"
 )
