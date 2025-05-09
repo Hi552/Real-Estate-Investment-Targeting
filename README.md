@@ -1,3 +1,24 @@
+# アプリテンプレートの使い方
+デフォルトは製造トラブル予測オペレーターアプリが立ち上がります。
+変更したい場合は以下の手順をおこなってください。
+
+## 以下の３つのアプリのうちどれかを選択します
+1. 製造トラブル予測オペレーター
+2. 顧客ターゲティング（不動産投資 営業支援）
+3. 医師ターゲティング（MR営業支援）
+
+## 対応するノートブックを確認
+1. /notebooks/train_model_underwriting_bleedout.ipynb
+2. /notebooks/train_model_underwriting_real_estate_targeting.ipynb
+3. /notebooks/train_model_underwriting_mr_advisor.ipynb
+
+## /infra/setting_main.pyのコードを変更
+
+ ```bash
+   model_training_nb = PROJECT_ROOT / "notebooks" / "train_model_underwriting_bleedout.ipynb"
+ ```
+を選択したノートブックに変更
+
 # Predictive Content Generator
 
 The predictive content generator is a customizable app template for generating content using predictive model outputs. Real world use cases for this technology include:
